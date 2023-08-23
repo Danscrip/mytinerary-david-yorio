@@ -1,16 +1,13 @@
-import React from 'react';
+import React from 'react'
 import { Link, NavLink } from 'react-router-dom';
 
 
 
 
 
-
-
-
-
-const NavBar = () => {
-  const handleLoginClick = () => {
+const NavBarcities = () => {
+ 
+    const handleLoginClick = () => {
     alert('Under construction');
   };
 
@@ -24,7 +21,7 @@ const NavBar = () => {
         <div id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
+              <Link className="nav-link" to="/">Home </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/Cities">citys</Link>
@@ -38,14 +35,13 @@ const NavBar = () => {
           </ul>
         </div>
       </nav>
-      <div className="intro-text">
-        <h2 className="text-center">
-          Find your perfect trip, designed by insiders who know and love their cities!
-        </h2>
-        <button className="btn btn-primary btn-lg">Explore Now</button>
-      </div>
+     
     </div>
   );
 };
 
-export default NavBar;
+
+  
+
+
+export default NavBarcities

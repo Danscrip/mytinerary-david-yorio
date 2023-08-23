@@ -1,39 +1,25 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import NavBar from './components/NavBar/NavBar'
-import Carrousel from './components/Carrousel/Carrousel'
-import Footer from './components/Footer/Footer'
+import Mytinerary from './pages/mytinerary'
 
+import { createBrowserRouter , RouterProvider} from 'react-router-dom'
+import Cities from './pages/cities'
 
-
+const router = createBrowserRouter([
+     {
+       path: '/',
+       element: <Mytinerary />,
+       
+     },
+     { path:'/Cities', element: <Cities /> },
+   
+   ])
 function App() {
   const [count, setCount] = useState(0)
 
-  return (
-    <div className='card .container-fluid'>
-     <header>
-<NavBar />
-     </header>
-     <main>
-<Carrousel />
+ return (
+   
 
-     </main>
-     
-     <footer>
-<Footer/>
-
-     </footer>
-      
-
-
-      
-
-
-
-
-    </div>
+     <RouterProvider router={router} />
 
    
 
