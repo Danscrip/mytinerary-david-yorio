@@ -1,0 +1,12 @@
+.cards {
+    display: flex;
+    /*flex-direction: row;*/
+     justify-content: center;
+     align-items: center;
+    /* height: 286px;
+     width: 286px;*/
+}
+.tarjeta {
+ height: 400px;
+    width: 286px;
+}
