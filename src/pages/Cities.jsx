@@ -6,6 +6,8 @@ import axios from 'axios'
 import CardsCitites from '../components/Cards/CardsCitites'
 
 import { getAllCitis } from '../components/services/citisquerys'
+import Cardcitidetails from '../components/Cards/Cardcitidetails'
+
 
 
 
@@ -14,8 +16,8 @@ import { getAllCitis } from '../components/services/citisquerys'
 
 
 const Cities = () => {
-  const params = useParams()
-  console.log(params)
+  //const params = useParams()
+  //sconsole.log(params)
 
   const [cities, setCities] = useState([])
 
@@ -65,6 +67,7 @@ const Cities = () => {
       <div className='row tarjeta2'> {
         cities.map(citi => <CardsCitites key={citi.country} data={citi} />)
       }</div>
+      <Cardcitidetails/>
       <Footer />
     </div>
   )
